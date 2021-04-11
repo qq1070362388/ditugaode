@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/user_detail_medal_rect_bg"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="80dp"
+        app:layout_behavior=".behavior.NoAnchorBottomSheetBehavior">
+
+        <include layout="@layout/layout_route_plan" />
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bus_result_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="158dp"
+        android:background="@color/white"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        app:layout_behavior=".behavior.TopLayoutBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/user_detail_medal_rect_bg2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="20dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="412dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout4"
+                android:layout_width="330dp"
+                android:layout_height="70dp"
+                android:background="@drawable/sharpe_yuanjiao3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline26"
+                app:layout_constraintHorizontal_bias="0.65"
+                app:layout_constraintStart_toStartOf="@+id/guideline25"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5">
+
+                <ImageView
+                    android:id="@+id/route_plan_exchange_btn"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.98"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/icon_exchange" />
+
+                <ImageView
+                    android:layout_width="@dimen/icon_light"
+                    android:layout_height="@dimen/icon_light"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.03"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.25"
+                    app:srcCompat="@drawable/yuanhuan1" />
+
+                <ImageView
+                    android:layout_width="@dimen/icon_light"
+                    android:layout_height="@dimen/icon_light"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.03"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.75"
+                    app:srcCompat="@drawable/yuanhuan2" />
+
+                <View
+                    android:id="@+id/view3"
+                    style="@style/DividerCommon"
+                    android:layout_width="270dp"
+                    android:layout_height="1dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.507" />
+
+                <TextView
+                    android:id="@+id/route_plan_start_edit_layout"
+                    android:layout_width="270dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/touming"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:inputType="textPersonName"
+                    android:text="我的位置"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@+id/view3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/route_plan_to_edit_layout"
+                    android:layout_width="270dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/touming"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="目的位置"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/route_plan_start_edit_layout"
+                    app:layout_constraintVertical_bias="0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/constraintLayout4"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline25"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.451"
+                app:srcCompat="@drawable/arrow_left_black" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/route_plan_tab_layout"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

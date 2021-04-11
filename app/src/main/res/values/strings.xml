@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ditugaode</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="sear_loc_bus_subway">查找地点、公交、地铁</string>
+    <string name="search">搜索</string>
+    <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
+    <string name="user_title">个人中心</string>
+    <string name="title_activity_user">ScrollingActivity</string>
+    <string name="no_Login_tip">登录体验更多功能</string>
+    <string name="Logo_enter">登录/注册</string>
+
+    <string name="route_plan_default">推荐方案</string>
+    <string name="route_plan_plan2">方案二</string>
+    <string name="route_plan_plan3">方案三</string>
+    <string name="route_plan_drive">驾车</string>
+    <string name="route_plan_bus">公交</string>
+    <string name="route_plan_walk">步行</string>
+    <string name="route_plan_ride">骑行</string>
+    <string name="route_plan_start_navi">开始导航</string>
+
+    <string name="poi_search_my_location">我的位置</string>
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+    <string name="poi_search_error">搜索出错</string>
+    <string name="route_plan_path_traffic_lights">红绿灯%1$s个</string>
+</resources>

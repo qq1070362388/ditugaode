@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="HomeFragment">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/route_plan_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/return_img"
+        android:layout_width="@dimen/icon"
+        android:layout_height="@dimen/icon"
+        android:layout_marginLeft="@dimen/space10"
+        android:layout_marginTop="@dimen/space10"
+        android:src="@drawable/icon_back_circle" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/bus_paths_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:anchorPoint="200dp"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="120dp"
+        app:layout_behavior=".behavior.AnchorBottomSheetBehavior">
+
+        <include
+            layout="@layout/layout_bus_route_result_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

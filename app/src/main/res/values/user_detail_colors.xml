@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--大标题-->
+    <!--常规标题-->
+    <!--副标题-->
+
+    <!--工具箱-->
+    <!--查看更多-->
+
+    <drawable name="user_detail_item_pressed">#F4F4F4</drawable>
+    <drawable name="user_detail_item_normal">@color/white</drawable>
+
+</resources>

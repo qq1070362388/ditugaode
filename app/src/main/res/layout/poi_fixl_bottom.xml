@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:behavior_hideable="true">
+    <View style="@style/DividerCommon" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@android:drawable/screen_background_light">
+
+        <TextView
+            android:id="@+id/left"
+            android:layout_width="71dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="查看详情"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_call_taxi"
+            app:layout_constraintEnd_toStartOf="@+id/tv_call_taxi"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toEndOf="@+id/tv_detail_img"
+            app:layout_constraintTop_toTopOf="@+id/tv_call_taxi"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/tv_call_taxi"
+            style="@style/PoiDetailFixedStyle"
+            android:layout_width="77dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/rectangle_corner_selector"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="    打车"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_go"
+            app:layout_constraintEnd_toStartOf="@+id/tv_go"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/left"
+            app:layout_constraintTop_toTopOf="@+id/tv_go" />
+
+        <ImageView
+            android:id="@+id/tv_detail_img"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/left"
+            app:layout_constraintEnd_toStartOf="@+id/left"
+            app:layout_constraintHorizontal_bias="0.35"
+            app:layout_constraintStart_toStartOf="@+id/guideline23"
+            app:layout_constraintTop_toTopOf="@+id/left"
+
+            app:srcCompat="@drawable/poi_indicator_details" />
+
+        <TextView
+            android:id="@+id/tv_route"
+            style="@style/PoiDetailFixedStyle"
+            android:layout_width="77dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/rectangle_blue_selector"
+            android:gravity="center|center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="    路线"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline24"
+            app:layout_constraintStart_toEndOf="@+id/tv_go"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/tv_go"
+            android:layout_width="77dp"
+            android:layout_height="26dp"
+            android:background="@drawable/rectangle_blue_selector"
+            android:gravity="center"
+            android:text="到这去"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_route"
+            app:layout_constraintEnd_toStartOf="@+id/tv_route"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_call_taxi"
+            app:layout_constraintTop_toTopOf="@+id/tv_route" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.02" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.98" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_call_taxi"
+            app:layout_constraintEnd_toEndOf="@+id/tv_call_taxi"
+            app:layout_constraintHorizontal_bias="0.256"
+            app:layout_constraintStart_toStartOf="@+id/tv_call_taxi"
+            app:layout_constraintTop_toTopOf="@+id/tv_call_taxi"
+            app:srcCompat="@drawable/poi_indicator_call_taxi" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_route"
+            app:layout_constraintEnd_toEndOf="@+id/tv_route"
+            app:layout_constraintHorizontal_bias="0.256"
+            app:layout_constraintStart_toStartOf="@+id/tv_route"
+            app:layout_constraintTop_toTopOf="@+id/tv_route"
+            app:srcCompat="@drawable/poi_indicator_route" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

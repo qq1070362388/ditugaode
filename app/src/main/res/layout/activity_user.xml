@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+<variable
+    name="data"
+    type="com.example.ditugaode.MyViewModel" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".UserActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="235dp"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            android:fitsSystemWindows="true">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/plane2"
+                app:contentScrim="@drawable/start"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:toolbarId="@+id/toolbar"
+
+                >
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin"
+                    app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+                    app:popupTheme="@style/AppTheme.PopupOverlay"
+                    app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context=".UserActivity">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="6dp">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1130dp"
+                    android:src="@drawable/touming"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.25" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.50"  />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.75"  />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/user_detail_medal_rect_bg"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.1" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="310dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="410dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="510dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="650dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="750dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="830dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="914dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="1014dp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/user_detail_medal_rect_bg"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.006">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/user_detail_heard"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.047"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/my_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未登录"
+                        android:textAlignment="viewStart"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.341"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.225" />
+
+                    <TextView
+                        android:id="@+id/user_login"
+                        android:layout_width="94dp"
+                        android:layout_height="31dp"
+                        android:background="@drawable/rectangle_blue_selector"
+                        android:gravity="center"
+                        android:text="@string/Logo_enter"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.914"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.156" />
+
+                    <TextView
+                        android:id="@+id/user_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_Login_tip"
+                        android:textAlignment="viewStart"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.418"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.774" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:src="@drawable/user_like"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView9"
+                    app:layout_constraintVertical_bias="0.3" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的收藏"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView10"
+                    app:layout_constraintVertical_bias="0.25" />
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:src="@drawable/user_detail_adress"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toTopOf="@+id/imageView9"
+                    app:layout_constraintVertical_bias="0.3" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的地址"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView11"
+                    app:layout_constraintVertical_bias="0.25" />
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:src="@drawable/user_detail_notice2"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintStart_toStartOf="@+id/guideline6"
+                    app:layout_constraintTop_toTopOf="@+id/imageView9"
+                    app:layout_constraintVertical_bias="0.3" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的消息"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/guideline6"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView13"
+                    app:layout_constraintVertical_bias=".25" />
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:src="@drawable/user_detail_tip"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView9"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toTopOf="@+id/imageView9"
+                    app:layout_constraintVertical_bias="0.3" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="通知中心"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView14"
+                    app:layout_constraintVertical_bias="0.25" />
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="0dp"
+                    android:layout_height="350dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/user_detail_medal_rect_bg"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="0dp"
+                    android:layout_height="550dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/user_detail_medal_rect_bg"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+                <ImageView
+                    android:id="@+id/travel1"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:src="@drawable/user_detail_travel"
+                    app:layout_constraintBottom_toBottomOf="@+id/travel2"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/travel2" />
+
+                <ImageView
+                    android:id="@+id/travel2"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:src="@drawable/user_detail_tickets"
+                    app:layout_constraintBottom_toBottomOf="@+id/travel3"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toTopOf="@+id/travel3" />
+
+                <ImageView
+                    android:id="@+id/travel3"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:src="@drawable/user_detail_hotel"
+                    app:layout_constraintBottom_toBottomOf="@+id/travel4"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintStart_toStartOf="@+id/guideline6"
+                    app:layout_constraintTop_toTopOf="@+id/travel4" />
+
+                <ImageView
+                    android:id="@+id/travel4"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:src="@drawable/user_detail_go"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline8"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toTopOf="@+id/imageView15"
+                    app:layout_constraintVertical_bias="0.3" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="景点"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView14"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView14" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="门票"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView15"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toTopOf="@+id/textView15" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="酒店"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView16"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintStart_toStartOf="@+id/guideline6"
+                    app:layout_constraintTop_toTopOf="@+id/textView16" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="出行"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline8"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toBottomOf="@+id/travel3"
+                    app:layout_constraintVertical_bias="0.25" />
+
+                <ImageView
+                    android:id="@+id/shopping1"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    app:layout_constraintBottom_toBottomOf="@+id/shopping2"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/shopping2"
+                    app:srcCompat="@drawable/user_detail_shpoping" />
+
+                <ImageView
+                    android:id="@+id/shopping2"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    app:layout_constraintBottom_toBottomOf="@+id/shopping3"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toTopOf="@+id/shopping3"
+                    app:srcCompat="@drawable/user_detail_restrant2" />
+
+                <ImageView
+                    android:id="@+id/shopping3"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    app:layout_constraintBottom_toBottomOf="@+id/shopping4"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintStart_toStartOf="@+id/guideline6"
+                    app:layout_constraintTop_toTopOf="@+id/shopping4"
+                    app:srcCompat="@drawable/user_detail_house" />
+
+                <ImageView
+                    android:id="@+id/shopping4"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline9"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toTopOf="@+id/guideline8"
+                    app:layout_constraintVertical_bias="0.3"
+                    app:srcCompat="@drawable/user_detail_kajuan" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="购物"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView6"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="餐饮"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView7"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="租房"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView8"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintStart_toStartOf="@+id/guideline6"
+                    app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="卡券"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline9"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toBottomOf="@+id/shopping4"
+                    app:layout_constraintVertical_bias="0.25" />
+
+                <ImageView
+                    android:id="@+id/user_Detail_12306"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    app:layout_constraintBottom_toBottomOf="@+id/running"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/running"
+                    app:srcCompat="@drawable/user_detail_12306" />
+
+                <ImageView
+                    android:id="@+id/running"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView22"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toTopOf="@+id/imageView22"
+                    app:srcCompat="@drawable/user_detail_run" />
+
+                <ImageView
+                    android:id="@+id/imageView21"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline10"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toTopOf="@+id/guideline9"
+                    app:layout_constraintVertical_bias="0.3"
+                    app:srcCompat="@drawable/user_detail_call" />
+
+                <ImageView
+                    android:id="@+id/imageView22"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintStart_toStartOf="@+id/guideline6"
+                    app:layout_constraintTop_toTopOf="@+id/imageView21"
+                    app:srcCompat="@drawable/user_detail_sjp" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12306"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline10"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/user_Detail_12306"
+                    app:layout_constraintVertical_bias="0.25" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="运动"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView17"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toTopOf="@+id/textView17" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="三角警告牌"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView18"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintStart_toStartOf="@+id/guideline6"
+                    app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="安全电话"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView19"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toTopOf="@+id/textView19" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="便携服务"
+                    android:textColor="@color/title_color"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline11"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView16"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <View
+                    android:id="@+id/view"
+                    style="@style/DividerCommon"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline11"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                <ImageView
+                    android:id="@+id/haluo"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    app:layout_constraintBottom_toBottomOf="@+id/liandongyun"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/liandongyun"
+                    app:srcCompat="@drawable/user_detail_danche" />
+
+                <ImageView
+                    android:id="@+id/liandongyun"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    app:layout_constraintBottom_toBottomOf="@+id/cdb"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toTopOf="@+id/cdb"
+                    app:srcCompat="@drawable/user_detail_qiche" />
+
+                <ImageView
+                    android:id="@+id/cdb"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintStart_toStartOf="@+id/guideline6"
+                    app:layout_constraintTop_toTopOf="@+id/imageView23"
+                    app:srcCompat="@drawable/user_detail_cdb" />
+
+                <ImageView
+                    android:id="@+id/imageView23"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline12"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toTopOf="@+id/guideline11"
+                    app:layout_constraintVertical_bias="0.3"
+                    app:srcCompat="@drawable/user_detail_jyz" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="哈罗单车"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline12"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/haluo"
+                    app:layout_constraintVertical_bias="0.25" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联动云"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView5"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="共享电宝"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView24"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintStart_toStartOf="@+id/guideline6"
+                    app:layout_constraintTop_toTopOf="@+id/textView24" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="加油站"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView25"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toTopOf="@+id/textView25" />
+
+                <ImageView
+                    android:id="@+id/user_detail_didi"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline13"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/guideline12"
+                    app:layout_constraintVertical_bias="0.3"
+                    app:srcCompat="@drawable/user_detail_didi" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="嘀嘀打车"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline13"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/user_detail_didi"
+                    app:layout_constraintVertical_bias="0.25" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="其他服务"
+                    android:textColor="@color/title_color"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline14"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/guideline13"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <View
+                    android:id="@+id/view2"
+                    style="@style/DividerCommon"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline14"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+                <ImageView
+                    android:id="@+id/shuidi"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView5"
+                    app:srcCompat="@drawable/user_detail_shuidi" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    app:layout_constraintBottom_toBottomOf="@+id/news"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toTopOf="@+id/news"
+                    app:srcCompat="@drawable/user_detail_help" />
+
+                <ImageView
+                    android:id="@+id/news"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintStart_toStartOf="@+id/guideline6"
+                    app:layout_constraintTop_toTopOf="@+id/imageView12"
+                    app:srcCompat="@drawable/user_detail_news" />
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline15"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toTopOf="@+id/guideline14"
+                    app:layout_constraintVertical_bias="0.3"
+                    app:srcCompat="@drawable/user_detail_setting" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="水滴公益"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline15"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/shuidi"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="智能客服"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView23"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toTopOf="@+id/textView23" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="新闻时事"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView29"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintStart_toStartOf="@+id/guideline6"
+                    app:layout_constraintTop_toTopOf="@+id/textView29" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设置"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView30"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toTopOf="@+id/textView30" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

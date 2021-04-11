@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_normal_gray"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".pickpoi.PoiSearchActivity2">
+
+
+    <LinearLayout
+        android:id="@+id/route_plan_from_edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:background="@drawable/user_detail_medal_rect_bg2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/space04">
+
+        <ImageView
+            android:id="@+id/poi_search_return_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginRight="@dimen/space04"
+            android:background="@drawable/sharpe_yuanjiao3">
+
+
+            <ImageView
+                android:id="@+id/poi_search_poi_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="11dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/ic_baseline_search_24" />
+
+            <EditText
+                android:id="@+id/poi_search_poi_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space10"
+                android:layout_toLeftOf="@id/poi_search_poi_btn"
+                android:background="@null"
+                android:hint="请输入关键字"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="@color/textDefualt2"
+                android:textColorHint="@color/textDefualt2"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="@dimen/space16"
+        android:layout_marginBottom="@dimen/space16"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/choose_poi_myloc_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_color_bg_white_gray"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/space16"
+            android:paddingBottom="@dimen/space16">
+
+            <ImageView
+                android:layout_width="@dimen/icon"
+                android:layout_height="@dimen/icon"
+                android:src="@drawable/icon_sel_loc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/poi_search_my_location"
+                android:textColor="@color/textDefualt2"
+                android:textSize="@dimen/font16" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/vertical_dotted_line"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/choose_poi_collect_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_color_bg_white_gray"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/space16"
+            android:paddingBottom="@dimen/space16"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_sel_start" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收藏的点"
+                android:textColor="@color/textDefualt2"
+                android:textSize="@dimen/font16" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/vertical_dotted_line" />
+
+        <LinearLayout
+            android:id="@+id/choose_poi_map_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_color_bg_white_gray"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/space16"
+            android:paddingBottom="@dimen/space16">
+
+            <ImageView
+                android:layout_width="@dimen/icon"
+                android:layout_height="@dimen/icon"
+                android:src="@drawable/icon_sel_map" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地图选点"
+                android:textColor="@color/textDefualt2"
+                android:textSize="@dimen/font16" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/poiListRv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
